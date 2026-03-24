@@ -42,7 +42,7 @@ float drillsPlus = 1.0;
 
 // Declarations for cost of units and items (makes it easier to edit)
 const int scvCost = 20, scvRefund = 10;
-const int marineCost = 40, marauderCost = 115;
+const int marineCost = 40, marauderCost = 100;
 
 // Declarations for insufficient currency HUD warning
 bool showInsufficientFunds = false;
@@ -631,7 +631,7 @@ void drawGameScreen() {
     display.setCursor(60, 30);
     display.print("B MAR (40)");
     display.setCursor(60, 50);
-    display.print("C MDR (115)");
+    display.print("C MDR (100)");
 
     // EngineeringBay Screen
   } else if (currentScreen == 2) {
