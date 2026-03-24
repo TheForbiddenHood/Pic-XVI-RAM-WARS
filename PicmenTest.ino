@@ -41,8 +41,8 @@ float steroids = 1.0;
 float drillsPlus = 1.0;
 
 // Declarations for cost of units and items (makes it easier to edit)
-const int scvCost = 10, scvRefund = 5;
-const int marineCost = 10, marauderCost = 25;
+const int scvCost = 20, scvRefund = 10;
+const int marineCost = 40, marauderCost = 115;
 
 // Declarations for insufficient currency HUD warning
 bool showInsufficientFunds = false;
@@ -620,18 +620,18 @@ void drawGameScreen() {
 
     // Controls Display
     display.setCursor(60, 40);
-    display.print("B +MNR (10)");
+    display.print("B +MNR (20)");
     display.setCursor(60, 50);
-    display.print("C -MNR (+5)");
+    display.print("C -MNR (+10)");
 
     // Barracks Screen
   } else if (currentScreen == 1) {
 
     // Controls Display
     display.setCursor(60, 30);
-    display.print("B TRP (10)");
+    display.print("B MAR (40)");
     display.setCursor(60, 50);
-    display.print("C MDR (25)");
+    display.print("C MDR (115)");
 
     // EngineeringBay Screen
   } else if (currentScreen == 2) {
