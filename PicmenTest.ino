@@ -620,18 +620,18 @@ void drawGameScreen() {
 
     // Controls Display
     display.setCursor(60, 40);
-    display.print("B +MNR (20)");
+    display.print("B +MNR | 20");
     display.setCursor(60, 50);
-    display.print("C -MNR (+10)");
+    display.print("C -MNR | +10");
 
     // Barracks Screen
   } else if (currentScreen == 1) {
 
     // Controls Display
     display.setCursor(60, 30);
-    display.print("B MAR (40)");
+    display.print("B MAR | 40");
     display.setCursor(60, 50);
-    display.print("C MDR (100)");
+    display.print("C MDR | 100");
 
     // EngineeringBay Screen
   } else if (currentScreen == 2) {
@@ -650,9 +650,9 @@ void drawGameScreen() {
 
     // Controls Display
     display.setCursor(60, 40);
-    display.print("B ROID (50)");
+    display.print("B ROID | 50");
     display.setCursor(60, 50);
-    display.print("C DRIL (50)");
+    display.print("C DRIL | 50");
 
   }
 }
